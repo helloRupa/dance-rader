@@ -16,6 +16,7 @@ main {
   width: 66%;
   margin: auto;
   margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 h1 {
@@ -75,4 +76,10 @@ button {
 
 h2 {
   font-size: 22px;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
 }

@@ -64,14 +64,16 @@ This project uses a local Rails backend to serve data and assumes that Rails wil
 Do the usual Git stuff:
 1. Fork the repo
 2. Clone the repo
-3. Create a solution branch to work from for your lecture
+3. Create a solution branch to work from for your lecture (master is the blank slate)
 
 To get started:
 1. `cd backend/`
 2. `rails db:migrate`
-3. `rails db:seed`
+3. `rails db:seed` (will clear db and reset ids before seeding)
 4. `rails s`
 5. If you're silly like me, you'll accidentally shut down your Rails server if you don't open a new Terminal tab in VS Code. So do that.
 6. Open index.html in your browser (it's in the root folder)
+
+Note: The first request after starting the server can be slow. I recommend making a GET request before class starts via fetch in the browser console. All subsequent requests will then be lightning fast. Like us, the server must warmup before exercise, I guess.
 
 A general solution is included in the main-solution branch
